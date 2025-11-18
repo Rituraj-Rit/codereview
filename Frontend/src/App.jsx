@@ -15,7 +15,7 @@ async function reviewCode(){
   if(code.trim().length==0){
     setReview("Write your Code first.");
   }
-  let response = await axios.post('https://codereviewx-1.onrender.com/ai/get-response', {code});
+  let response = await axios.post('https://codereview-1-xarm.onrender.com/ai/get-response', {code});
   setReview(response.data);
 }
 
